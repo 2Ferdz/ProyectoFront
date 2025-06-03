@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background-color: rgb(245, 253, 246);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo-container {
+    font-family: "Staatliches", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 10px;
+    margin-top: -15px;
+
+    & h1 {
+        font-family: "Staatliches", sans-serif;
+        font-size: 30px;
+        color: #ff2e2e;
+        text-decoration: none;
+    }
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & li {
+        padding: 0 20px;
+        list-style: none;
+    }
+    
+    & a{
+        text-decoration: none;
+        font: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+        transition: 0.3s;
+    }
+
+    & a:hover{
+        color: #ff0000;
+    }
+
+    & .login {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap; /* Hace que el texto no salte a otra línea */
+    line-height: 45px;
+    }
+
+    & .login:hover {
+    background-color: #ff2e2e;
+    color: #ffffff
+    }
+
+    & .signup {
+        font-size: 11px;
+    }
+
+}

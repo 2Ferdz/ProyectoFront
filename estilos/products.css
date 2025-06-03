@@ -1,0 +1,63 @@
+.productos {
+    padding: 60px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.producto {
+    background-color: #f4f8f3;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.producto h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.precio {
+    font-size: 1rem;
+    color: #ff2e2e;
+    margin-bottom: 15px;
+}
+
+.producto button {
+    background-color: #ff2e2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #d92121;
+}
