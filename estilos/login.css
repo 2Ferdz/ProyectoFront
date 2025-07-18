@@ -1,0 +1,165 @@
+@import url(fonts.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #181419;
+    color:white; 
+}
+
+.bodyRegistrarse{
+    height: 100vh;
+    background:linear-gradient(to right top, #00000073,#00000073),url("../img/login-background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .logo {
+        text-decoration: none;
+        font-family: "Staatliches", sans-serif;
+        text-align: center;
+        line-height: 10px;
+        margin-bottom: 60px;
+
+        & h1 {
+            font-family: "Staatliches", sans-serif;
+            font-size: 38px;
+            color: #ff2e2e;
+            text-decoration: none;
+            margin: 0px;
+        }
+    }
+
+    .main{
+        .seccionRegistrarse{
+            background-color:rgba(10, 10, 10, 0.849);
+            width: 40%;
+            margin:20px auto;
+            border-radius: 5px;
+            padding: 5px 30px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-size:1rem;
+            .tituloRegistrarse{
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            form{
+                width: 100%;
+                padding:10px;
+                input:not(.check,.boton),select{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    padding: 0px 20px;
+                    font-size: 1.2rem;
+                    border-radius: 20px;
+                    border: 2px solid #cc2323;
+                    background-color: rgba(26, 26, 26, 0.849);
+                    outline: none;
+                    color:rgb(255, 255, 255);
+                }
+                .error input:not(.check,.boton),.error select{
+                    border: 1px solid #ff0000;
+                }
+                .error-text{
+                    color: #ff0000;
+                    font-size: 0.8rem;
+                    margin-top:0px;
+                    margin-bottom: 10px;
+                }
+              
+                .terminos{
+                    font-size: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .textoCheck{
+                        margin-left: 10px;
+                    }
+                }
+                .boton{
+                    width: 92%;
+                    box-sizing: content-box;
+                    background-color:#cc2323;
+                    border: 2px solid #cc2323;
+                    color: #ffffff;
+                    padding: 1rem 1rem;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                   
+                }
+
+                .ayuda{
+                    margin-top:40px;
+                    font-size: 1.05rem;
+                    text-decoration: none;
+                    color: #787878;
+                    font-weight:400;
+                   
+                }
+            }
+           
+        }
+   
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .bodyRegistrarse{
+        .headerRegistrarse{
+            padding:20px;
+            .anclaLogo{
+                font-size: 1rem;
+            }
+        }
+        .main{
+            .seccionRegistrarse{
+                width: 95%;
+                padding: 10px 10px;
+                .tituloRegistrarse{
+                    font-size: 2rem;
+                }
+               form{
+                width: 100%;
+                text-align: center;
+               
+                input:not(.check,.boton),select{
+                    width: 80%;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+                .terminos{
+                    width: 80%;
+                    margin:0 auto;
+                    font-size: 0.7rem;
+                }
+                .boton{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 70%;
+                    padding: 0.8rem 0.8rem;
+                    font-size: 0.8rem;
+                }
+                .ayuda{
+                    text-align: left;
+                    font-size: 0.8rem;
+                }
+               }
+               
+            }
+        }
+    }
+
+}

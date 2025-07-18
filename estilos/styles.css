@@ -18,8 +18,3 @@ html {
 body {
     background-color:rgb(197, 197, 197)
 }
-
-@media (max-width: 700px) {
-    .navbar { 
-        scale: 0.7; }
-}

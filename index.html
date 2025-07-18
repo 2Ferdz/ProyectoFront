@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novatech Store</title>
     <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="/estilos/style.css">
 </head>
 <body>
     <header class="header">
@@ -21,10 +21,16 @@
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Tienda</a></li>
                 <li><a href="">Contacto</a></li>
-                <li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                <li><a href="" class="login">Iniciar Sesión</a>
-                    <p class="signup">¿Eres nuevo? <a href="">Regístrate</a></p></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li><a href="login.html" class="login">Iniciar Sesión</a>
+                    <p class="signup">¿Eres nuevo? <a href="login.html">Regístrate</a></p></li>
+
+                <a href="" id="close" class="close"><i class="far fa-times"></i></a>
             </ul>
+        </div>
+        <div class="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
         </div>
     </header>
     <main class="main">
@@ -37,99 +43,12 @@
             </div>
         </a>
 
-        <!-- Sección de productos 1-->
-        <section class="productos productos-p1">
+        <!-- Sección de productos-->
+        <section class="productos">
             <h2>🔥 Productos Destacados 🔥</h2>
             <div class="productos-grid">
-                <div class="producto">
-                    <img src="img/producto1.jpeg" alt="Producto 1">
-                    <h3>Auricular Inalámbrico Gamer Logitech A50 X</h3>
-                    <p class="precio">$627.339</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto2.jpeg" alt="Producto 2">
-                    <h3>Placa De Video GeForce RTX 3060 12Gb Msi Ventus 2X Oc</h3>
-                    <p class="precio">$455.989</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto3.jpeg" alt="Producto 3">
-                    <h3>Monitor Gamer 29" LG Full Hd Ultrawide 75Hz 1Ms 29WQ600 WFHD</h3>
-                    <p class="precio">$352.249</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto4.jpeg" alt="Producto 4">
-                    <h3>Pc Amd Ryzen 5 4655G- A520- 16GB -Ssd 480Gb</h3>
-                    <p class="precio">$364.609</p>
-                    <button>Ver más</button>
-                </div>
             </div>
         </section>
-
-        <!-- Sección de productos 2-->
-        <section class="productos productos-p2">
-            <h2>⚡ Día del padre ⚡</h2>
-            <div class="productos-grid">
-                <div class="producto">
-                    <img src="img/producto5.jpeg" alt="Producto 5">
-                    <h3>Notebook Hp 250 G10 Core i3 1315U 8Gb Ssd 256Gb 15.6"</h3>
-                    <p class="precio">$599.999</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto6.jpeg" alt="Producto 6">
-                    <h3>Notebook Hp 255 G10 Ryzen 3 7330U 8Gb Ssd 256Gb 15.6"</h3>
-                    <p class="precio">$588.149</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto7.jpeg" alt="Producto 7">
-                    <h3>Notebook Exo Smart R41 LT3/LT4 Celeron N4020 4Gb Ssd 128Gb 14.1 Win11</h3>
-                    <p class="precio">$242.659</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto8.jpeg" alt="Producto 8">
-                    <h3>Monitor Gamer 24" LG Full Hd 180Hz 1Ms Freesync 24GS60F</h3>
-                    <p class="precio">$269.999</p>
-                    <button>Ver más</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de productos 3-->
-        <section class="productos productos-p3">
-            <h2>😎 Mejores periféricos gamer 😎</h2>
-            <div class="productos-grid">
-                <div class="producto">
-                    <img src="img/producto9.jpeg" alt="Producto 9">
-                    <h3>Teclado Gamer Razer Huntsman V3 Pro Mini Analog Optical Esports</h3>
-                    <p class="precio">$203.989</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto10.jpeg" alt="Producto 10">
-                    <h3>Mouse Gamer Razer Cobra Pro Lightweight Rgb Inalámbrico</h3>
-                    <p class="precio">$147.799</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto11.jpeg" alt="Producto 11">
-                    <h3>Micrófono HyperX Quadcast 2S Negro</h3>
-                    <p class="precio">$280.059</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="producto">
-                    <img src="img/producto12.jpeg" alt="Producto 12">
-                    <h3>Auricular Inalámbrico Gamer Logitech G733 Lightspeed Rgb Blanco</h3>
-                    <p class="precio">$259.979</p>
-                    <button>Ver más</button>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <footer class="footer">
@@ -168,5 +87,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/store.js"></script>
 </body>
 </html>

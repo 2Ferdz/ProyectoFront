@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Novatech</title>
+    <link rel="stylesheet" href="estilos/cart.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🛒 Tu carrito</h1>
+        <a href="index.html" class="volver"><i class="fas fa-arrow-left"></i> Seguir comprando</a>
+    </header>
+
+    <main class="cart-container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+            </tbody>
+        </table>
+
+        <div class="cart-total">
+            <h2>Total: <span id="total">$00.00</span></h2>
+            <button id="finalizar-compra" class="comprar">Finalizar compra</button>
+        </div>
+    </main>
+    <script src="scripts/cart.js"></script>
+</body>
+</html>
